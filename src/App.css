@@ -1,44 +1,87 @@
 .App {
-  text-align: center;
-}
+  text-align: center; }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+  height: 80px; }
 
 .App-header {
   background-color: yellowgreen;
   height: 150px;
   padding: 20px;
-  color:black;
-}
+  color: black; }
 
 .App-title {
-  font-size: 1.5em;
-}
+  font-size: 1.5em; }
 
 .App-intro {
-  font-size: large;
-}
+  font-size: large; }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 
-
-#test.__react_component_tooltip  {
+.__react_component_tooltip.type-dark {
   background-color: white;
-  border: 1px solid red;
-  color: black;
-}
+  color: black !important;
+  border: 1px solid red; }
+  .__react_component_tooltip.type-dark.place-top:after {
+    border-top-color: red;
+    border-top-style: solid;
+    border-top-width: 6px; }
+  .__react_component_tooltip.type-dark.place-bottom:after {
+    border-bottom-color: red;
+    border-bottom-style: solid;
+    border-bottom-width: 6px; }
+  .__react_component_tooltip.type-dark.place-left:after {
+    border-left-color: red;
+    border-left-style: solid;
+    border-left-width: 6px; }
+  .__react_component_tooltip.type-dark.place-right:after {
+    border-right-color: red;
+    border-right-style: solid;
+    border-right-width: 6px; }
 
-#custom1.__react_component_tooltip  {
+.critical .__react_component_tooltip.type-dark {
   background-color: white;
-  border: 1px solid green;
-}
+  color: black !important;
+  border: 1px solid red; }
+  .critical .__react_component_tooltip.type-dark.place-top:after {
+    border-top-color: red;
+    border-top-style: solid;
+    border-top-width: 6px; }
+  .critical .__react_component_tooltip.type-dark.place-bottom:after {
+    border-bottom-color: red;
+    border-bottom-style: solid;
+    border-bottom-width: 6px; }
+  .critical .__react_component_tooltip.type-dark.place-left:after {
+    border-left-color: red;
+    border-left-style: solid;
+    border-left-width: 6px; }
+  .critical .__react_component_tooltip.type-dark.place-right:after {
+    border-right-color: red;
+    border-right-style: solid;
+    border-right-width: 6px; }
 
-#test.__react_component_tooltip:after{
-  border-top-color: red;
-}
+.ok .__react_component_tooltip.type-dark {
+  background-color: white;
+  color: black !important;
+  border: 1px solid green; }
+  .ok .__react_component_tooltip.type-dark.place-top:after {
+    border-top-color: green;
+    border-top-style: solid;
+    border-top-width: 6px; }
+  .ok .__react_component_tooltip.type-dark.place-bottom:after {
+    border-bottom-color: green;
+    border-bottom-style: solid;
+    border-bottom-width: 6px; }
+  .ok .__react_component_tooltip.type-dark.place-left:after {
+    border-left-color: green;
+    border-left-style: solid;
+    border-left-width: 6px; }
+  .ok .__react_component_tooltip.type-dark.place-right:after {
+    border-right-color: green;
+    border-right-style: solid;
+    border-right-width: 6px; }
