@@ -4,8 +4,14 @@ import './App.css';
 //import { Tooltip } from './Tooltip.js';
 import Tip from 'grommet/components/Tip';
 import { Tooltip, OverlayTrigger, Button } from 'react-bootstrap';
-import ReactTooltip from 'react-tooltip'
-//import 'grommet/scss/vanilla/index';
+import ReactTooltip from 'react-tooltip';
+import {
+  Tooltip as ReactTippy
+} from 'react-tippy';
+
+import 'react-tippy/dist/tippy.css';
+import { PortalProvider } from 'react-portals';
+
 class App extends Component {
   onHover=(el) => {
     console.log(el);
@@ -71,6 +77,38 @@ class App extends Component {
         >
           Hello World
         </div>
+
+        
+ 
+<ReactTippy
+  html={<h1 style={{ border:"1px solid black"}}>Welcome to react</h1>}
+  className="criticalColor"
+  theme="light"
+  style={{ backgroundColor:"yellow"}}
+  followCursor
+  trigger="mouseenter"
+>
+  <div style={{ height: "50px" }} className="col-xs-7 col-sm-4 col-md-4 col-lg-5">
+    Click here to show popup using react-tippy package
+  </div>
+</ReactTippy>
+
+<ReactTippy
+  theme="light"
+  className="okColor"
+  // options
+  //title="Welcome to React"
+  html={<h1>Welcome to react</h1>}
+  followCursor
+  trigger="mouseenter"
+>
+  <div style={{ height: "50px" }} className="col-xs-7 col-sm-4 col-md-4 col-lg-6">
+    Click here to show popup using react-tippy package
+  </div>
+</ReactTippy>
+<PortalProvider>
+        <h1>Render your app content here!</h1>
+      </PortalProvider>
       </div>
     );
   }
